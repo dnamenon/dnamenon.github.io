@@ -4,6 +4,10 @@ author_image: /assets/images/author.jpg
 baseurl: ""
 cover: /assets/images/unknown.jpg
 description: "A blog for progress. Anything and everything"
+ages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Schedules: '/schedules'
 email: dev.n.menon@gmail.com
 gems: 
   - jemoji
@@ -22,9 +26,7 @@ title: DNM
 url: ""
 baseurl: ""
 
-pages_list:       
-  About: '/about'
-  Archive: '/archive'
+
 # social icons and sharing options
 social:
 #  - icon:	twitter
