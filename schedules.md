@@ -1,9 +1,9 @@
 ---
 layout: page
-title: schedule
+title: schedules
 ---
  
-##Schedules
+
 
 
 {% for post in site.categories.schedules %}
