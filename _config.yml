@@ -7,14 +7,16 @@ email: dev.n.menon@gmail.com
 gems: 
   - jemoji
 highlighter: pygments
-logo: /assets/images/df_logo.jpg
+logo: /assets/images/images.jpg
 markdown: redcarpet
 name: "Dev Menon"
 paginate: 5
 social: 
   - 
-    ? "icon:	github url:	https://github.com/dnamenon desc: share_url"
-    : ~
+    icon:	github
+	 url:	"https://github.com/dnamenon"
+	 desc: 
+    share_url:
     share_link: ~
     share_title: ~
 title: DNM
