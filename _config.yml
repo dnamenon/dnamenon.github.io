@@ -5,33 +5,33 @@ gems:
   - jemoji
   
 # Site settings
-title: "Mediator"
+title: "DNM"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+  A blog for progress. Anything and everyting
 
-email: a-mail@mail.mail
+email: dev.n.menon@gmail.com
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: 'Dev Menon'
+author: 'Dev Menon'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "http://dnamenon.github.io" # the base hostname & protocol for your site
 baseurl: ""
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
+#  - icon:	twitter
+#    url:	https://twitter.com/dirkfabisch
+#    desc: Follow me on twitter
+ #   share_url: http://twitter.com/share
+ #   share_title: ?text=
+  #  share_link: "&amp;url="
 
 #  - icon:	facebook
 #    url:	https://facebook.com/???
@@ -41,15 +41,15 @@ social:
 #    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/dirkfabisch
-    desc:	Fork me on github
+    url:	https://github.com/dnamenon
+    desc:	
     share_url:
     share_title:
     share_link:
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
+ - icon:	google-plus
+    url:	https://google.com/dev.n.menon
+    desc:	Add me on google+
 #    share_url:
 #    share_title:
 #    share_link:
