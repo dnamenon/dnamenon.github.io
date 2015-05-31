@@ -7,7 +7,7 @@ description: "A blog for progress. Anything and everything"
 pages_list:       
   About: '/about'
   Archive: '/archive'
-  Schedules: '/schedule'
+  Schedules: '/schedules'
 email: dev.n.menon@gmail.com
 gems: 
   - jemoji
