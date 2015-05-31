@@ -22,6 +22,9 @@ title: DNM
 url: ""
 baseurl: ""
 
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
 # social icons and sharing options
 social:
 #  - icon:	twitter
