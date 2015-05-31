@@ -1,3 +1,4 @@
+--- 
 author: "Dev Menon"
 author_image: /assets/images/author.jpg
 baseurl: ""
@@ -13,10 +14,8 @@ name: "Dev Menon"
 paginate: 5
 social: 
   - 
-    icon:	github
-	 url:	"https://github.com/dnamenon"
-	 desc: 
-    share_url:
+    ? "icon:	github url:	https://github.com/dnamenon desc: share_url"
+    : ~
     share_link: ~
     share_title: ~
 title: DNM
