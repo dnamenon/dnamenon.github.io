@@ -4,7 +4,7 @@ author_image: /assets/images/author.jpg
 baseurl: ""
 cover: /assets/images/unknown.jpg
 description: "A blog for progress. Anything and everything"
-ages_list:       
+pages_list:       
   About: '/about'
   Archive: '/archive'
   Schedules: '/schedules'
