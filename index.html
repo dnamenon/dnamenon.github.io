@@ -27,7 +27,11 @@ layout: default
 	  <a href="/posts/posts/">Archive</a>
 	  <a href="/posts/schedules/">Schedules</a>
     </div>
-	{% site.posts %}
+	{% for site in site.posts %}
+	 <ul>
+		 {% post %}
+	</ul>
+	  {.% endfor %}
 </header>
 
 
