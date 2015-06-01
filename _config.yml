@@ -4,10 +4,6 @@ author_image: /assets/images/author.jpg
 baseurl: ""
 cover: /assets/images/unknown.jpg
 description: "A blog for progress. Anything and everything"
-pages_list:       
-  About: '/about'
-  Archive: '/archive'
-  Schedules: '/schedules'
 email: dev.n.menon@gmail.com
 gems: 
   - jemoji
