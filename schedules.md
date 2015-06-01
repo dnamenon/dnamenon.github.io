@@ -1,6 +1,7 @@
 ---
 layout: page
 title: schedules
+permalink: /schedules/
 ---
  
 
