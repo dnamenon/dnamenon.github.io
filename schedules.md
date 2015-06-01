@@ -6,6 +6,6 @@ title: schedules
 
 
 
-{% for post in site.categories.schedules %}
+{% for post in site.posts.schedules %}
   * {{ post.date | date_to_string }} &raquo; ({{ post.url }})
 {% endfor %}
