@@ -19,8 +19,8 @@ social:
     share_link: ~
     share_title: ~
 title: DNM
-url: "dnamenon.github.io"
-baseurl: ""
+url: ""
+baseurl: "dnamenon.github.io"
 
 
 # social icons and sharing options
