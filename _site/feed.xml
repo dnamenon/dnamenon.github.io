@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNM</title>
+    <description>A blog for progress. Anything and everything</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 02 Jun 2015 14:26:45 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Jun 2015 14:26:45 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>hello</title>
+        <description>&lt;h1&gt;Hi&lt;/h1&gt;
+
+&lt;p&gt;this is a progress tracker mom. &lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 May 2015 00:00:00 -0500</pubDate>
+        <link>/posts/2015/05/31/hello-world.html</link>
+        <guid isPermaLink="true">/posts/2015/05/31/hello-world.html</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+  </channel>
+</rss>

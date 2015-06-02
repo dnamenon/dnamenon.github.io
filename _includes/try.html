@@ -1,11 +1,16 @@
-<h1> Schedules </h1>
 
+ 
+
+
+
+{% assign Today = site.time | date: '%Y-%m-%d' %}
 <ul>
-{% for date in site.data.schedules %}
-  <li>
-    
-      {{ schedules.time }}  {{ schedules.name }}  {{ schedules.completed }}
-    </a>
-  </li>
+{% for schedule in site.data.schedules %}
+   {% if schedule.date == Today%}
+   <li>
+        <h3> {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} </h3>
+	</li>
+   {% endif %}   
 {% endfor %}
+
 </ul>
