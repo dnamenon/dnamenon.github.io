@@ -1,0 +1,11 @@
+<h1> Schedules </h1>
+
+<ul>
+{% for date in site.data.schedules %}
+  <li>
+    
+      {{ schedules.time }}  {{ schedules.name }}  {{ schedules.completed }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
