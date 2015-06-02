@@ -3,5 +3,6 @@ layout: page
 title: Schedules
 permalink: /schedules/
 ---
-
-{% try.html %}
+<body>
+{% include try.html %}
+</body>
