@@ -5,9 +5,38 @@
     <description>A blog for progress. Anything and everything</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Jun 2015 14:26:45 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Jun 2015 14:26:45 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 09:19:27 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 09:19:27 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Done!!!</title>
+        <description>&lt;h2&gt;Finally, I&amp;#39;m Done&lt;/h2&gt;
+
+&lt;p&gt;It took me 5 days, but I&amp;#39;ve finally finished this blog. The main problem I ran into yesterday was trying to create my schedule page. I first tried to create a seperate category of posts under a folder called _categories in the _posts. I created an if statement in a schedules.md file for those pages, but it didn&amp;#39;t. Then, I went to the Jekyll website for help where I got the idea to use the _data directory. I created a schedules.csv file with 4 field names, date(15-06-02), name (of task), time (ex. 10-11), and completed(y/n). I created a template in _includes. I spent 3 or more hours trying to create an if nested in a for loop that would list all of the items of &amp;quot;today&amp;#39;s&amp;quot; date. which creates a schedule. I finally realized that for some reason, the if statement was either being ignored, or a string comparison of the date with (site.time | date: &amp;#39;%y-%m-%d&amp;#39; ) and the date from the csv file was not working. &lt;a href = &quot;http://stackoverflow.com/questions/24986305/iterate-over-a-list-of-posts-and-compare-the-date&quot;&gt;This&lt;/a&gt; answer to a post  helped a lot. I converted my date from the csv file into a variable, and then the if statement worked. I inclueded the try.html file into the schedule.md file, and my site was up and running. 
+This is my final try.html:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% assign Today = site.time | date: &amp;#39;%Y-%m-%d&amp;#39; %}
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+{% for schedule in site.data.schedules %}
+   {% if schedule.date == Today%}
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt; {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+   {% endif %}   
+{% endfor %}
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 03 Jun 2015 00:00:00 -0500</pubDate>
+        <link>/posts/2015/06/03/finished-the-blog.html</link>
+        <guid isPermaLink="true">/posts/2015/06/03/finished-the-blog.html</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>hello</title>
@@ -18,8 +47,6 @@
         <pubDate>Sun, 31 May 2015 00:00:00 -0500</pubDate>
         <link>/posts/2015/05/31/hello-world.html</link>
         <guid isPermaLink="true">/posts/2015/05/31/hello-world.html</guid>
-        
-        <category>featured</category>
         
         
         <category>posts</category>

@@ -7,7 +7,7 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>hello</title>
+  <title>Done!!!</title>
   <meta name="description" content="A blog for progress. Anything and everything" />
 
   <meta name="HandheldFriendly" content="True" />
@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="canonical" href="/posts/2015/05/31/hello-world.html">
+  <link rel="canonical" href="/posts/2015/06/03/finished-the-blog.html">
 
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!--  <link rel="stylesheet" href=""> -->
@@ -38,12 +38,12 @@
         
         <div class="noarticleimage">
           <div class="post-meta">
-            <h1 class="post-title">hello</h1>
+            <h1 class="post-title">Done!!!</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url(/assets/images/images.jpg)">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
-              <time datetime="2015-05-31T00:00:00-05:00">31 May 2015</time>
+              <time datetime="2015-06-03T00:00:00-05:00">03 Jun 2015</time>
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -57,9 +57,23 @@
             <span class="post-reading-time"></span> read
           </div>
           <a name="topofpage"></a>
-          <h1>Hi</h1>
+          <h2>Finally, I&#39;m Done</h2>
 
-<p>this is a progress tracker mom. </p>
+<p>It took me 5 days, but I&#39;ve finally finished this blog. The main problem I ran into yesterday was trying to create my schedule page. I first tried to create a seperate category of posts under a folder called _categories in the _posts. I created an if statement in a schedules.md file for those pages, but it didn&#39;t. Then, I went to the Jekyll website for help where I got the idea to use the _data directory. I created a schedules.csv file with 4 field names, date(15-06-02), name (of task), time (ex. 10-11), and completed(y/n). I created a template in _includes. I spent 3 or more hours trying to create an if nested in a for loop that would list all of the items of &quot;today&#39;s&quot; date. which creates a schedule. I finally realized that for some reason, the if statement was either being ignored, or a string comparison of the date with (site.time | date: &#39;%y-%m-%d&#39; ) and the date from the csv file was not working. <a href = "http://stackoverflow.com/questions/24986305/iterate-over-a-list-of-posts-and-compare-the-date">This</a> answer to a post  helped a lot. I converted my date from the csv file into a variable, and then the if statement worked. I inclueded the try.html file into the schedule.md file, and my site was up and running. 
+This is my final try.html:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% assign Today = site.time | date: &#39;%Y-%m-%d&#39; %}
+
+<span class="nt">&lt;ul&gt;</span>
+{% for schedule in site.data.schedules %}
+   {% if schedule.date == Today%}
+   <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;h3&gt;</span> {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+   {% endif %}   
+{% endfor %}
+
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
         </section>
         <footer class="post-footer">
@@ -77,7 +91,7 @@
               <h4>Dev Menon</h4>
               <p class="bio"></p>
               <hr>
-              <p class="published">Published <time datetime="2015-05-31 00:00">31 May 2015</time></p>
+              <p class="published">Published <time datetime="2015-06-03 00:00">03 Jun 2015</time></p>
             </section>
           </div>
           
