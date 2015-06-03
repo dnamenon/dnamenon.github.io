@@ -4,16 +4,15 @@ It took me 5 days, but I've finally finished this blog. The main problem I ran i
 
 ```
 
-{% assign Today = site.time | date: '%Y-%m-%d' %}
-<ul>
-{% for schedule in site.data.schedules %}
-   {% if schedule.date == Today%}
-   <li>
-        <h3> {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} </h3>
-	</li>
-   {% endif %}   
-{% endfor %}
-
-</ul>
+               {% assign Today = site.time | date: '%Y-%m-%d' %}
+                 <ul>
+                  {% for schedule in site.data.schedules %}
+                   {% if schedule.date == Today%}
+                  <li>
+            <h3> {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} </h3>
+	         </li>
+       {% endif %}   
+     {% endfor %}
+      </ul>
 
 ```
