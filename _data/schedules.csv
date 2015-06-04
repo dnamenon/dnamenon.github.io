@@ -7,4 +7,13 @@ date,time,name,completed
 2015-06-02,5-6,basketball,false
 2015-06-02,6-6:45,golang,false
 2015-06-02,6:45-8:30,piano class,false
-2015-06-03,6:45-8:30,piano class,false
+
+2015-06-04,9-10,study,no
+2015-06-04,10-11,practice test,no
+2015-06-04,11-12,study,no
+2015-06-04,12-1,lunch,no
+2015-06-04,1-2,practice test,no
+2015-06-04,2-3:30,gym,no
+2015-06-04,3:30-4,shower,no
+2015-06-04,9-10,study,no
+2015-06-04,9-10,practice test,no

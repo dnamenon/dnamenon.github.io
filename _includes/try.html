@@ -8,7 +8,7 @@
 {% for schedule in site.data.schedules %}
    {% if schedule.date == Today%}
    <li>
-        <h3> {{ schedule.time }} {{ schedule.name }} {{ schedule.completed}} </h3>
+        <h3> {{ schedule.time }} {{ schedule.name }}. completed?: {{ schedule.completed}} </h3>
 	</li>
    {% endif %}   
 {% endfor %}
